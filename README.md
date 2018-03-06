@@ -53,4 +53,10 @@
 + (NSArray *)listFilesInCachesDirectoryByDeep:(BOOL)deep;
 ///遍历tmp目录
 + (NSArray *)listFilesInTmpDirectoryByDeep:(BOOL)deep;
+
+#pragma mark - 写入文件内容
+///写入文件内容
++ (BOOL)writeFileAtPath:(NSString *)path content:(NSObject *)content;
+///写入文件内容(错误信息error)
++ (BOOL)writeFileAtPath:(NSString *)path content:(NSObject *)content error:(NSError **)error;
 ```
