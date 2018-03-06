@@ -64,7 +64,7 @@
 * #import <TXFileOperation.h>
 * 下面是简单用法
 ```objc
-//获取documents路径
+    //获取documents路径
     NSString * documentsDirPath=[TXFileOperation documentsDir];
     //文件夹名称
     NSString * folderName=@"test";
@@ -83,7 +83,7 @@
     //创建文件
     if ([TXFileOperation createFileAtPath:filePath]) {
         NSLog(@"文件创建成功");
-        NSLog(@"文件地址:%@",filePath);
+        NSLog(@"文件路径:%@",filePath);
     }else{
         NSLog(@"文件创建失败");
     }
