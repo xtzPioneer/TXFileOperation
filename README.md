@@ -73,23 +73,25 @@
     //创建文件夹
     if ([TXFileOperation createDirectoryAtPath:folderPath]) {
         NSLog(@"文件夹创建成功");
+        NSLog(@"文件夹路径:%@",folderPath);
     }else{
         NSLog(@"文件夹创建失败");
     }
     //文件名称
-    NSString *  fileName=@"text.txt";
-    //拼接文件路径
-    NSString * filePath=[NSString stringWithFormat:@"%@/%@",folderPath,fileName];
+    NSString * fileName=@"text.txt";
+    //拼接文件路径
+    NSString * filePath=[NSString stringWithFormat:@"%@/%@",folderPath,fileName];
     //创建文件
     if ([TXFileOperation createFileAtPath:filePath]) {
         NSLog(@"文件创建成功");
-        NSLog(@"文件路径:%@",filePath);
+        NSLog(@"文件路径:%@",filePath);
     }else{
         NSLog(@"文件创建失败");
     }
     //向文件中写入内容
     if ([TXFileOperation writeFileAtPath:filePath content:self.textView.text]) {
         NSLog(@"文件内容写入成功");
+        NSLog(@"写入内容:%@",self.textView.text);
     }else{
         NSLog(@"文件内容写入失败");
     }
