@@ -60,3 +60,5 @@
 ///写入文件内容(错误信息error)
 + (BOOL)writeFileAtPath:(NSString *)path content:(NSObject *)content error:(NSError **)error;
 ```
+### 使用方法
+* 
