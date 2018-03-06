@@ -78,8 +78,8 @@
     }
     //文件名称
     NSString *  fileName=@"text.txt";
-    //拼接文件地址
-    NSString * filePath=[NSString stringWithFormat:@"%@/%@",folderPath,fileName];
+    //拼接文件路径
+    NSString * filePath=[NSString stringWithFormat:@"%@/%@",folderPath,fileName];
     //创建文件
     if ([TXFileOperation createFileAtPath:filePath]) {
         NSLog(@"文件创建成功");
