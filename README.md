@@ -62,7 +62,6 @@
 ```
 ### 使用方法
 * #import <TXFileOperation.h>
-* 下面是简单用法
 ```objc
     //获取documents路径
     NSString * documentsDirPath=[TXFileOperation documentsDir];
